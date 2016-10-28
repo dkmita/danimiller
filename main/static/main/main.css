@@ -1,0 +1,9 @@
+div#main-container {
+    max-width: 760px;
+}
+div#main-trapeze-container {
+    background-color: lightblue;
+}
+div#main-hair-container { 
+    background-color: pink;
+}
