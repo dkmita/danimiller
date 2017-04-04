@@ -7,3 +7,13 @@ div#main-trapeze-container {
 div#main-hair-container { 
     background-color: pink;
 }
+
+
+// don't use the hyperlink style for stuff in <a> tags
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}

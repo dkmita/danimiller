@@ -6,21 +6,23 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href={% static "main/main.css" %}/>
-    <title>Dani Miller</title>
+    <title>{% block title %}Dani Miller{% endblock %}</title>
 </head>
 
 <body>
     <div id="main-container" class="center-block">
         <div class="jumbotron text-center">
-            <h1>Dani Miller</h1>
+            <a href="/"><h1>Dani Miller</h1></a>
         </div>
         <div class="row">
+            {% block content %}
             <div id="main-hair-container" class="col-sm-6 text-center">
-                <h2>Hair Stylist</h2>
+                <a href="/hair"><h2>Hair Stylist</h2></a>
             </div>
             <div id="main-trapeze-container" class="col-sm-6 text-center">
-                <h2>Trapeze Artist</h2>
+                <a href="/trapeze"><h2>Trapeze Artist</h2></a>
             </div>
+            {% endblock %}
         </div>
     </div>
 </body>
